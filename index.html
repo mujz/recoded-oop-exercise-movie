@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+    <title>Movie</title>
+    <style>
+      #movie-backdrop {
+        width: 100%;
+      }
+
+      .container {
+        padding-top: 32px;
+      }
+
+      #actors {
+        margin: 24px 16px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img id="movie-backdrop">
+        </div>
+        <div class="col-md-8">
+          <h2 id="movie-title"></h2>
+          <p id="movie-release-date"></p>
+          <p id="movie-runtime"></p>
+          <h3>Overview:</h3>
+          <p id="movie-overview"></p>
+        </div>
+      </div>
+      <h3>Actors:</h3>
+      <ul id="actors" class="list-unstyled"></ul>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
