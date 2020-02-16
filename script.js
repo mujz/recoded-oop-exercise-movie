@@ -1,5 +1,6 @@
 const TMDB_BASE_URL = 'https://api.themoviedb.org/3'
 const PROFILE_BASE_URL = 'http://image.tmdb.org/t/p/w185'
+const BACKDROP_BASE_URL = 'http://image.tmdb.org/t/p/w780'
 
 class App {
   static run() {
@@ -9,7 +10,6 @@ class App {
 }
 
 class APIService {
-  static BACKDROP_BASE_URL = 'http://image.tmdb.org/t/p/w780'
 
   static fetchMovie(movieId) {
     const url = APIService._constructUrl(`movie/${movieId}`)
@@ -19,7 +19,7 @@ class APIService {
   }
 
   static  _constructUrl(path) {
-    return `${APIService.BACKDROP_BASE_URL}/${path}?api_key=${atob('NTQyMDAzOTE4NzY5ZGY1MDA4M2ExM2M0MTViYmM2MDI=')}`
+    return `${TMDB_BASE_URL}/${path}?api_key=${atob('NTQyMDAzOTE4NzY5ZGY1MDA4M2ExM2M0MTViYmM2MDI=')}`
   }
 }
 
